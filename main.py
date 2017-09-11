@@ -224,12 +224,15 @@ def infer(epochs, batch_size):
 			input_image)
 
 if __name__ == '__main__':
-	epochs = int(sys.argv[1])
-	batch_size = int(sys.argv[2])
+	#epochs = int(sys.argv[1])
+	#batch_size = int(sys.argv[2])
 	
-	if sys.argv[3] == "infer":
-		infer(epochs, batch_size)
-		exit()
+	#if sys.argv[3] == "infer":
+	#	infer(epochs, batch_size)
+	#	exit()
     
+	epochs = 100
+	batch_size = 10
+	
 	run(epochs, batch_size)
 	infer(epochs, batch_size)
