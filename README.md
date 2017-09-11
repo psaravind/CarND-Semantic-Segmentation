@@ -32,5 +32,17 @@ python main.py
  - `project_tests.py`
  - Newest inference images from `runs` folder
  
- ## How to write a README
-A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
+### Test Results
+
+| epoch | batch size | keep prob | learning_rate | loss |
+|  30   |    13      |     0.5   |    1e-5       | 0.95882 |
+| 100   |    13      |     0.5   |    1e-5       | 0.565314 |
+| 100   |    10      |     0.5   |    1e-5       | 0.684652 |
+|  20   |    10      |     0.8   |    0.001      | 0.208086 |
+|  50   |    10      |     0.9   |    0.001      | 0.142004 |
+| 100   |    10      |     0.9   |    0.001      | 0.0225644 |
+
+![alt text](https://github.com/psaravind/CarND-Semantic-Segmentation/blob/master/runs/um_000015.png)
+![alt text](https://github.com/psaravind/CarND-Semantic-Segmentation/blob/master/runs/umm_000035.png)
+![alt text](https://github.com/psaravind/CarND-Semantic-Segmentation/blob/master/runs/uu_000071.png)
+
