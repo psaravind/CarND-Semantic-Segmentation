@@ -179,7 +179,7 @@ def run(epochs, batch_size):
 		logits, optimizer, cross_entropy_loss = optimize(layer_output, correct_label, learning_rate, num_classes)
 		sess.run(tf.global_variables_initializer())
 		saver = tf.train.Saver()
-		save_file = "/output/train_model_" + str(epochs) + "_" + str(batch_size) + ".ckpt"
+		save_file = "./train_model_" + str(epochs) + "_" + str(batch_size) + ".ckpt"
 		
 		# TODO: Train NN using the train_nn function
 		train_nn(sess, 
@@ -199,10 +199,10 @@ def infer(epochs, batch_size):
 	num_classes = 2
 	image_shape = (160, 576)
 	data_dir = './data'
-	runs_dir = '/output'
+	runs_dir = './runs'
 	vgg_path = os.path.join(data_dir, 'vgg')
 	
-	save_file = "/output/train_model_" + str(epochs) + "_" + str(batch_size) + ".ckpt"
+	save_file = "./train_model_" + str(epochs) + "_" + str(batch_size) + ".ckpt"
 	tf.reset_default_graph()
 	with tf.Session() as sess:
 		learning_rate = tf.placeholder(tf.float32)
