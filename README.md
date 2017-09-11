@@ -34,23 +34,19 @@ python main.py
  
 ### Test Results
 
-epoch|batch size|keep prob|learning_rate|loss
+Project was run in Floyd Hub and AWS, and following loss was obtained for various epoch, batch size, keep probability and learning rate.
 
----|---|---|---|---|---
+epoch | batch size | keep prob | learning rate | loss
+----- | ---------- | --------- | ------------- | ----
+30 | 13 | 0.5 | 1e-5 | 0.95882
+100 | 13 | 0.5 | 1e-5 | 0.565314
+100 | 10 | 0.5 | 1e-5 | 0.684652
+20 | 10 | 0.8 | 0.001 | 0.208086
+50 | 10 | 0.9 | 0.001 | 0.142004
+100 | 10 | 0.9 | 0.001 | 0.0225644
 
-30|13|0.5|1e-5|0.95882
-
-100|13|0.5|1e-5|0.565314
-
-100|10|0.5|1e-5|0.684652
-
-20|10|0.8|0.001|0.208086
-
-50|10|0.9|0.001|0.142004
-
-100|10|0.9|0.001|0.0225644
-
-![alt text](https://github.com/psaravind/CarND-Semantic-Segmentation/blob/master/runs/um_000015.png)
-![alt text](https://github.com/psaravind/CarND-Semantic-Segmentation/blob/master/runs/umm_000035.png)
-![alt text](https://github.com/psaravind/CarND-Semantic-Segmentation/blob/master/runs/uu_000071.png)
+Final results for last run for  epocs 100 and batch size 10 is shown below
+![alt text](/runs/um_000015.png)
+![alt text](/runs/umm_000035.png)
+![alt text](/runs/uu_000071.png)
 
